@@ -55,16 +55,15 @@ public:
                     ec--;
                     curR = er;
                     curC = ec;
-                    Pv*=-1;
                 }
                 
                 else{
                     bc++;
                     curR = br;
                     curC = bc;
-                    Pv*=-1;
                 }
                 
+                Pv*=-1;
                 inC = true;
             }
             
