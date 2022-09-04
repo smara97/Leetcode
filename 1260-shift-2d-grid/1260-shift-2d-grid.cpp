@@ -13,14 +13,12 @@ public:
         
         vector<int>swp(v.size());
         
-        for(int i=0;i<v.size();i++)
-            swp[(i+k)%v.size()] = v[i];
-        
-        int indx = 0;
-        
-        for(int i=0;i<n;i++)
-            for(int j=0;j<m;j++)
-                grid[i][j] = swp[indx], indx++;
+        for(int i=0;i<v.size();i++){
+            
+            int kp = (i+k)%v.size();
+            grid[kp/m][kp%m] = v[i];
+            
+        }
         
         return grid;
     }
