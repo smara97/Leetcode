@@ -10,9 +10,7 @@ public:
         for(auto i:grid)
             for(auto j :i)
                 v.push_back(j);
-        
-        vector<int>swp(v.size());
-        
+                
         for(int i=0;i<v.size();i++){
             
             int kp = (i+k)%v.size();
