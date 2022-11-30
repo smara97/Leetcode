@@ -3,7 +3,7 @@ public:
     bool uniqueOccurrences(vector<int>& arr) {
         
         vector<int>freq(1e4+5);
-        map<int, int>mp;
+        unordered_map<int, int>mp;
         
         for(auto e:arr)
             mp[e]++;
